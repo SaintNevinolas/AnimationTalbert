@@ -1,0 +1,33 @@
+[gd_scene load_steps=7 format=3 uid="uid://cq7pwow4038tn"]
+
+[ext_resource type="Shader" uid="uid://b48einatwmpyn" path="res://MeshInterpole.gdshader" id="1_3q05e"]
+[ext_resource type="Texture2D" uid="uid://cu8jco5wx2xeg" path="res://geoData/3DObjects/Sillon/Sillon_2002-09-30_0.png" id="2_bfmia"]
+[ext_resource type="Texture2D" uid="uid://bq60sgi5rodh8" path="res://geoData/3DObjects/Sillon/Sillon_2003-06-15_0.png" id="3_axwy7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5hhit"]
+render_priority = 0
+shader = ExtResource("1_3q05e")
+shader_parameter/CurrentMesh = ExtResource("2_bfmia")
+shader_parameter/NextMesh = ExtResource("3_axwy7")
+shader_parameter/use_mask = false
+shader_parameter/use_height_diff = true
+shader_parameter/blend_factor = 0.0
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_35ot4"]
+material = SubResource("ShaderMaterial_5hhit")
+size = Vector2(1, 1)
+subdivide_width = 1024
+subdivide_depth = 1024
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3q05e"]
+
+[node name="SillonInterpole" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = SubResource("PlaneMesh_35ot4")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("BoxShape3D_3q05e")
