@@ -1,0 +1,227 @@
+[gd_scene load_steps=11 format=3 uid="uid://ddotv0p8jx40n"]
+
+[ext_resource type="Texture2D" uid="uid://drvudtrf4qgs4" path="res://texture/pauseButton.png" id="1_i3q2k"]
+[ext_resource type="Script" uid="uid://u4770s2o1mi" path="res://ui_for_xr.gd" id="1_u6qt7"]
+[ext_resource type="Script" uid="uid://c47d070aq07hl" path="res://range_slider.gd" id="2_u6qt7"]
+[ext_resource type="Texture2D" uid="uid://b7oxkk5oscsqy" path="res://texture/normal.png" id="3_thomj"]
+[ext_resource type="Texture2D" uid="uid://duvh2n8dg8811" path="res://texture/hovered.png" id="4_k8kle"]
+[ext_resource type="Script" uid="uid://bvubhbnofxdhk" path="res://menu.gd" id="6_jyvam"]
+[ext_resource type="Texture2D" uid="uid://cd36um66pynnf" path="res://texture/hamburger_menu.png" id="7_q5eyk"]
+[ext_resource type="Script" uid="uid://dbxdl11jume30" path="res://hamburger_menu.gd" id="8_drsjj"]
+[ext_resource type="Texture2D" uid="uid://b2hm4ybd5int6" path="res://texture/noTides.png" id="9_q5eyk"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_r1axx"]
+
+[node name="UiForXr" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u6qt7")
+
+[node name="TimelineSliderSillon" type="HSlider" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -301.0
+offset_top = -27.0
+offset_right = 299.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 21.0
+tick_count = 21
+ticks_on_borders = true
+
+[node name="PlayButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -364.0
+offset_top = -51.0
+offset_right = 148.0
+offset_bottom = 461.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+toggle_mode = true
+texture_normal = ExtResource("1_i3q2k")
+
+[node name="RangeSlider" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -301.0
+offset_top = -68.0
+offset_right = 299.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("2_u6qt7")
+
+[node name="Bar" type="ColorRect" parent="RangeSlider"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.921569, 0.921569, 0.921569, 1)
+
+[node name="Handle1" type="TextureButton" parent="RangeSlider"]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 20.0
+texture_normal = ExtResource("3_thomj")
+texture_hover = ExtResource("4_k8kle")
+
+[node name="Handle2" type="TextureButton" parent="RangeSlider"]
+layout_mode = 0
+offset_left = 580.0
+offset_right = 600.0
+offset_bottom = 20.0
+texture_normal = ExtResource("3_thomj")
+texture_hover = ExtResource("4_k8kle")
+
+[node name="CheckButton" type="CheckButton" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -411.0
+offset_top = -38.0
+offset_right = -367.0
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 0
+button_pressed = true
+
+[node name="OrthoScale" type="VSlider" parent="."]
+layout_mode = 1
+offset_left = 15.0
+offset_top = 150.0
+offset_right = 31.0
+offset_bottom = 550.0
+min_value = 1.0
+max_value = 20.0
+step = 0.1
+value = 1.0
+
+[node name="OrthoScaleValue" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.23
+offset_top = 538.5
+offset_right = 87.23
+offset_bottom = 561.5
+text = "1"
+
+[node name="OrthoHeightScale" type="VSlider" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -31.0
+offset_top = 150.0
+offset_right = -15.0
+offset_bottom = 550.0
+grow_horizontal = 0
+min_value = 1.0
+max_value = 10.0
+step = 0.1
+value = 1.0
+
+[node name="OrthoHeightScaleValue" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -93.5601
+offset_top = 538.5
+offset_right = -37.5601
+offset_bottom = 561.5
+grow_horizontal = 0
+text = "1"
+horizontal_alignment = 2
+
+[node name="Menu" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = -101.0
+offset_right = 212.0
+grow_vertical = 0
+script = ExtResource("6_jyvam")
+
+[node name="CheckBox" type="CheckBox" parent="Menu"]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_r1axx")
+text = "Comparative view"
+
+[node name="CheckBox2" type="CheckBox" parent="Menu"]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_r1axx")
+text = "Absolute view"
+
+[node name="CheckBox3" type="CheckBox" parent="Menu"]
+layout_mode = 2
+button_pressed = true
+button_group = SubResource("ButtonGroup_r1axx")
+text = "Realistic view"
+
+[node name="HamburgerMenu" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -20.0
+grow_vertical = 0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("7_q5eyk")
+script = ExtResource("8_drsjj")
+
+[node name="WaterButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+toggle_mode = true
+texture_normal = ExtResource("9_q5eyk")
+
+[connection signal="pressed" from="Menu/CheckBox" to="Menu" method="_on_check_box_pressed"]
+[connection signal="pressed" from="Menu/CheckBox2" to="Menu" method="_on_check_box_2_pressed"]
+[connection signal="pressed" from="Menu/CheckBox3" to="Menu" method="_on_check_box_3_pressed"]
+[connection signal="pressed" from="HamburgerMenu" to="HamburgerMenu" method="_on_pressed"]

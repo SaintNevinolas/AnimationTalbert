@@ -1,0 +1,242 @@
+[gd_scene load_steps=46 format=3 uid="uid://04sh85t7rvu"]
+
+[ext_resource type="Script" uid="uid://dqenyhttddsj2" path="res://node_3d.gd" id="1_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://dnymkf2vssf5i" path="res://treated/sillon_20020930.tscn" id="2_dsgk7"]
+[ext_resource type="PackedScene" uid="uid://bx4i0i8j43ij4" path="res://treated/sillon_20030615.tscn" id="3_72tv7"]
+[ext_resource type="PackedScene" uid="uid://ddm2yqivpnl5q" path="res://treated/sillon_20050918.tscn" id="4_x6a8j"]
+[ext_resource type="PackedScene" uid="uid://c0uvfyrur0w5a" path="res://treated/sillon_20060430.tscn" id="5_s7uix"]
+[ext_resource type="PackedScene" uid="uid://cckvix0sgo81t" path="res://treated/sillon_20070925.tscn" id="6_4hyfj"]
+[ext_resource type="PackedScene" uid="uid://cq5q7j1t6hfux" path="res://treated/sillon_20080319.tscn" id="7_8d0ks"]
+[ext_resource type="PackedScene" uid="uid://b7qo71oj3gjwv" path="res://treated/sillon_20090917.tscn" id="8_8kg7c"]
+[ext_resource type="PackedScene" uid="uid://ddbwkxe3c8w5h" path="res://treated/sillon_20100429.tscn" id="9_wwdad"]
+[ext_resource type="PackedScene" uid="uid://kmgro5abn085" path="res://treated/sillon_20100922.tscn" id="10_ykyjb"]
+[ext_resource type="PackedScene" uid="uid://d53co2e0qns6" path="res://treated/sillon_20110914.tscn" id="11_sivbr"]
+[ext_resource type="PackedScene" uid="uid://bi4taygv52t7r" path="res://treated/sillon_20120918.tscn" id="12_4yprr"]
+[ext_resource type="PackedScene" uid="uid://yamjsxu3q7l0" path="res://treated/sillon_20130905.tscn" id="13_1ofy4"]
+[ext_resource type="PackedScene" uid="uid://d0x26m1gjybpe" path="res://treated/sillon_20140305.tscn" id="14_a41ck"]
+[ext_resource type="PackedScene" uid="uid://csl0p6kh4cop6" path="res://treated/sillon_20140910.tscn" id="15_alien"]
+[ext_resource type="PackedScene" uid="uid://by81ruk3vt6mx" path="res://treated/sillon_20150929.tscn" id="16_8jhw1"]
+[ext_resource type="PackedScene" uid="uid://pj0ql27ti2r5" path="res://treated/sillon_20160407.tscn" id="17_if4ww"]
+[ext_resource type="PackedScene" uid="uid://jmjlxhf4stvv" path="res://treated/sillon_20170907.tscn" id="18_brp11"]
+[ext_resource type="PackedScene" uid="uid://dmu8tojjbga5b" path="res://treated/sillon_20180910.tscn" id="19_dvobo"]
+[ext_resource type="PackedScene" uid="uid://d0xuon4u51wsm" path="res://treated/sillon_20191031.tscn" id="20_gvloe"]
+[ext_resource type="PackedScene" uid="uid://bxsrtb4b61lt5" path="res://treated/sillon_20200820.tscn" id="21_m5u2i"]
+[ext_resource type="PackedScene" uid="uid://dmru2dtvwerlt" path="res://treated/sillon_20210922.tscn" id="22_7u8at"]
+[ext_resource type="PackedScene" uid="uid://dqjxmolm2pvpk" path="res://treated/sillon_20220915.tscn" id="23_u85y0"]
+[ext_resource type="PackedScene" uid="uid://dutbu1d5a0tbg" path="res://treated/faille_20180307.tscn" id="25_j3e5s"]
+[ext_resource type="PackedScene" uid="uid://biocg4j86ucmx" path="res://treated/faille_20230505.tscn" id="26_nu31w"]
+[ext_resource type="PackedScene" uid="uid://5f2q6w1sq4s4" path="res://treated/faille_20180322.tscn" id="27_nu31w"]
+[ext_resource type="PackedScene" uid="uid://bep7b6ssm3oa4" path="res://treated/faille_20180417.tscn" id="28_2yde8"]
+[ext_resource type="PackedScene" uid="uid://8i16dwx7kf7o" path="res://treated/faille_20180717.tscn" id="29_id0nj"]
+[ext_resource type="PackedScene" uid="uid://c76ayo8cjmdpe" path="res://treated/faille_20180913.tscn" id="30_1q667"]
+[ext_resource type="PackedScene" uid="uid://xans4xnie3h1" path="res://treated/faille_20181121.tscn" id="31_ype4i"]
+[ext_resource type="PackedScene" uid="uid://cnax0gf25xo87" path="res://treated/faille_20190205.tscn" id="32_ype4i"]
+[ext_resource type="PackedScene" uid="uid://b4pq1djgh6t1k" path="res://treated/faille_20190308.tscn" id="33_2mu51"]
+[ext_resource type="PackedScene" uid="uid://v60uqpo4mqi0" path="res://treated/faille_20190918.tscn" id="34_vmvb8"]
+[ext_resource type="PackedScene" uid="uid://difn0mg23dokg" path="res://treated/faille_20190521.tscn" id="35_4i7mf"]
+[ext_resource type="PackedScene" uid="uid://duqjjhvqeyjdv" path="res://treated/faille_20191217.tscn" id="36_vmvb8"]
+[ext_resource type="PackedScene" uid="uid://cg1ycrt4l5tbt" path="res://treated/faille_20200123.tscn" id="37_72tv7"]
+[ext_resource type="PackedScene" uid="uid://de3e70ccjax5i" path="res://treated/faille_20200526.tscn" id="38_x6a8j"]
+[ext_resource type="PackedScene" uid="uid://h4nn2nq6scia" path="res://treated/faille_20200907.tscn" id="39_s7uix"]
+[ext_resource type="PackedScene" uid="uid://bvusbs44hb1cj" path="res://treated/faille_20201117.tscn" id="40_4hyfj"]
+[ext_resource type="PackedScene" uid="uid://dfq8qn3iijhgp" path="res://treated/faille_20210526.tscn" id="41_8d0ks"]
+[ext_resource type="PackedScene" uid="uid://2xu8viqrrlxk" path="res://treated/faille_20210922.tscn" id="42_8kg7c"]
+[ext_resource type="PackedScene" uid="uid://bnucaaju6jknm" path="res://treated/faille_20211215.tscn" id="43_wwdad"]
+[ext_resource type="PackedScene" uid="uid://m0rp6dnq0tbv" path="res://treated/faille_20220504.tscn" id="44_ykyjb"]
+[ext_resource type="PackedScene" uid="uid://bosueuhcs8ysa" path="res://WATER.tscn" id="45_72tv7"]
+[ext_resource type="PackedScene" uid="uid://myhybw2ri58r" path="res://treated/faille_20230302.tscn" id="45_sivbr"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_a0tk4")
+
+[node name="CameraSillon" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 15.8025, 0.0802993)
+current = true
+
+[node name="CameraFaille" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 24.436, -74.9014)
+
+[node name="SillonGroup" type="Node" parent="."]
+
+[node name="Sillon_2002-09-30" parent="SillonGroup" instance=ExtResource("2_dsgk7")]
+
+[node name="Sillon_2003-06-15" parent="SillonGroup" instance=ExtResource("3_72tv7")]
+visible = false
+
+[node name="Sillon_2005-09-18" parent="SillonGroup" instance=ExtResource("4_x6a8j")]
+visible = false
+
+[node name="Sillon_2006-04-30" parent="SillonGroup" instance=ExtResource("5_s7uix")]
+visible = false
+
+[node name="Sillon_2007-09-25" parent="SillonGroup" instance=ExtResource("6_4hyfj")]
+visible = false
+
+[node name="Sillon_2008-03-19" parent="SillonGroup" instance=ExtResource("7_8d0ks")]
+visible = false
+
+[node name="Sillon_2009-09-17" parent="SillonGroup" instance=ExtResource("8_8kg7c")]
+visible = false
+
+[node name="Sillon_2010-04-29" parent="SillonGroup" instance=ExtResource("9_wwdad")]
+visible = false
+
+[node name="Sillon_2010-09-22" parent="SillonGroup" instance=ExtResource("10_ykyjb")]
+visible = false
+
+[node name="Sillon_2011-09-14" parent="SillonGroup" instance=ExtResource("11_sivbr")]
+visible = false
+
+[node name="Sillon_2012-09-18" parent="SillonGroup" instance=ExtResource("12_4yprr")]
+visible = false
+
+[node name="Sillon_2013-09-05" parent="SillonGroup" instance=ExtResource("13_1ofy4")]
+visible = false
+
+[node name="Sillon_2014-03-05" parent="SillonGroup" instance=ExtResource("14_a41ck")]
+visible = false
+
+[node name="Sillon_2014-09-10" parent="SillonGroup" instance=ExtResource("15_alien")]
+visible = false
+
+[node name="Sillon_2015-09-29" parent="SillonGroup" instance=ExtResource("16_8jhw1")]
+visible = false
+
+[node name="Sillon_2016-04-07" parent="SillonGroup" instance=ExtResource("17_if4ww")]
+visible = false
+
+[node name="Sillon_2017-09-07" parent="SillonGroup" instance=ExtResource("18_brp11")]
+visible = false
+
+[node name="Sillon_2018-09-10" parent="SillonGroup" instance=ExtResource("19_dvobo")]
+visible = false
+
+[node name="Sillon_2019-10-31" parent="SillonGroup" instance=ExtResource("20_gvloe")]
+visible = false
+
+[node name="Sillon_2020-08-20" parent="SillonGroup" instance=ExtResource("21_m5u2i")]
+visible = false
+
+[node name="Sillon_2021-09-22" parent="SillonGroup" instance=ExtResource("22_7u8at")]
+visible = false
+
+[node name="Sillon_2022-09-15" parent="SillonGroup" instance=ExtResource("23_u85y0")]
+visible = false
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.281739, 0.959491, 0, -0.959491, -0.281739, 0, 1.22295, 0)
+
+[node name="FailleGroup" type="Node" parent="."]
+
+[node name="Faille_2018-03-07" parent="FailleGroup" instance=ExtResource("25_j3e5s")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+
+[node name="Faille_2018-03-22" parent="FailleGroup" instance=ExtResource("27_nu31w")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2018-04-17" parent="FailleGroup" instance=ExtResource("28_2yde8")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2018-07-17" parent="FailleGroup" instance=ExtResource("29_id0nj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2018-09-13" parent="FailleGroup" instance=ExtResource("30_1q667")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2018-11-21" parent="FailleGroup" instance=ExtResource("31_ype4i")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2019-02-05" parent="FailleGroup" instance=ExtResource("32_ype4i")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2019-03-08" parent="FailleGroup" instance=ExtResource("33_2mu51")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2019-05-21" parent="FailleGroup" instance=ExtResource("35_4i7mf")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2019-09-18" parent="FailleGroup" instance=ExtResource("34_vmvb8")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2019-12-17" parent="FailleGroup" instance=ExtResource("36_vmvb8")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2020-01-23" parent="FailleGroup" instance=ExtResource("37_72tv7")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2020-05-26" parent="FailleGroup" instance=ExtResource("38_x6a8j")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2020-09-07" parent="FailleGroup" instance=ExtResource("39_s7uix")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2020-11-17" parent="FailleGroup" instance=ExtResource("40_4hyfj")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2021-05-26" parent="FailleGroup" instance=ExtResource("41_8d0ks")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2021-09-22" parent="FailleGroup" instance=ExtResource("42_8kg7c")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2021-12-15" parent="FailleGroup" instance=ExtResource("43_wwdad")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2022-05-04" parent="FailleGroup" instance=ExtResource("44_ykyjb")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2023-03-02" parent="FailleGroup" instance=ExtResource("45_sivbr")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="Faille_2023-05-05" parent="FailleGroup" instance=ExtResource("26_nu31w")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, -75.3413)
+visible = false
+
+[node name="WaterSillon" parent="." instance=ExtResource("45_72tv7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.314, 0.2, 9.264)
+
+[node name="WaterFaille" parent="." instance=ExtResource("45_72tv7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.314, 3.95051, -69.4804)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "Hello"

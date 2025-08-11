@@ -1,0 +1,760 @@
+[gd_scene load_steps=90 format=3 uid="uid://04sh85t7rvu"]
+
+[ext_resource type="Script" uid="uid://dqenyhttddsj2" path="res://scripts/node_3d.gd" id="1_hssls"]
+[ext_resource type="PackedScene" uid="uid://cq7pwow4038tn" path="res://SillonInterpole.tscn" id="3_s7uix"]
+[ext_resource type="Texture2D" uid="uid://drvudtrf4qgs4" path="res://texture/pauseButton.png" id="3_ykyjb"]
+[ext_resource type="Script" uid="uid://c47d070aq07hl" path="res://range_slider.gd" id="4_1ofy4"]
+[ext_resource type="Script" uid="uid://c1kwgkt1jruo3" path="res://xr_camera_3d.gd" id="4_4hyfj"]
+[ext_resource type="Texture2D" uid="uid://b7oxkk5oscsqy" path="res://texture/normal.png" id="4_4yprr"]
+[ext_resource type="Texture2D" uid="uid://duvh2n8dg8811" path="res://texture/hovered.png" id="5_1ofy4"]
+[ext_resource type="Script" uid="uid://bvubhbnofxdhk" path="res://menu.gd" id="7_dvobo"]
+[ext_resource type="Texture2D" uid="uid://cd36um66pynnf" path="res://texture/hamburger_menu.png" id="7_if4ww"]
+[ext_resource type="Script" uid="uid://dbxdl11jume30" path="res://hamburger_menu.gd" id="8_brp11"]
+[ext_resource type="Texture2D" uid="uid://b2hm4ybd5int6" path="res://texture/noTides.png" id="10_gvloe"]
+[ext_resource type="PackedScene" uid="uid://b70wqbv6pxcoj" path="res://testWater.tscn" id="13_m5u2i"]
+[ext_resource type="PackedScene" uid="uid://bosueuhcs8ysa" path="res://scripts/WATER.tscn" id="45_72tv7"]
+[ext_resource type="PackedScene" uid="uid://bw0g8aoyqfino" path="res://geoData/prefabs/Sillon/sillon_2002_09_30.tscn" id="46_4hyfj"]
+[ext_resource type="PackedScene" uid="uid://c57gmaq3dsgc5" path="res://geoData/prefabs/Sillon/sillon_2003_06_15.tscn" id="47_wigdg"]
+[ext_resource type="PackedScene" uid="uid://dkh3usf45sdx6" path="res://geoData/prefabs/Sillon/sillon_2005_09_18.tscn" id="48_fs8kf"]
+[ext_resource type="PackedScene" uid="uid://ls1e6pdagco2" path="res://geoData/prefabs/Sillon/sillon_2006_04_30.tscn" id="49_arvyt"]
+[ext_resource type="PackedScene" uid="uid://dqojf0qrt5got" path="res://geoData/prefabs/Sillon/sillon_2007_09_25.tscn" id="50_3ku12"]
+[ext_resource type="Shader" uid="uid://tjadba6s1d71" path="res://rainMesh.gdshader" id="50_8kg7c"]
+[ext_resource type="PackedScene" uid="uid://bysj73ofgvwfx" path="res://geoData/prefabs/Sillon/sillon_2008_03_19.tscn" id="51_ars1g"]
+[ext_resource type="Texture2D" uid="uid://g88eatbgo6v5" path="res://texture/FX_CloudAlpha04.png" id="51_wwdad"]
+[ext_resource type="PackedScene" uid="uid://dsra3devbdggn" path="res://geoData/prefabs/Sillon/sillon_2009_09_17.tscn" id="52_oa651"]
+[ext_resource type="PackedScene" uid="uid://chyacbt6ukqrd" path="res://geoData/prefabs/Sillon/sillon_2010_04_29.tscn" id="53_8tted"]
+[ext_resource type="PackedScene" uid="uid://cwtmxm3026nv8" path="res://geoData/prefabs/Sillon/sillon_2010_09_22.tscn" id="54_487xd"]
+[ext_resource type="PackedScene" uid="uid://c0seuv8okmeh8" path="res://geoData/prefabs/Sillon/sillon_2011_09_14.tscn" id="55_jweu0"]
+[ext_resource type="PackedScene" uid="uid://yts53xjx5ql7" path="res://geoData/prefabs/Sillon/sillon_2012_09_18.tscn" id="56_3yw45"]
+[ext_resource type="PackedScene" uid="uid://k8r30dwe0rsg" path="res://sillon_ortho.tscn" id="56_a41ck"]
+[ext_resource type="PackedScene" uid="uid://cqhw276realc" path="res://addons/godot-xr-tools/functions/function_pointer.tscn" id="56_alien"]
+[ext_resource type="PackedScene" uid="uid://clujaf3u776a3" path="res://addons/godot-xr-tools/objects/viewport_2d_in_3d.tscn" id="57_8jhw1"]
+[ext_resource type="PackedScene" uid="uid://clsltw5exdpl7" path="res://geoData/prefabs/Sillon/sillon_2013_09_05.tscn" id="57_wjvdr"]
+[ext_resource type="PackedScene" uid="uid://ddotv0p8jx40n" path="res://UIForXR.tscn" id="58_if4ww"]
+[ext_resource type="PackedScene" uid="uid://d2fsbawr3hnu4" path="res://geoData/prefabs/Sillon/sillon_2014_03_05.tscn" id="58_s1scn"]
+[ext_resource type="PackedScene" uid="uid://bcdlwpdn3ygr" path="res://geoData/prefabs/Sillon/sillon_2014_09_10.tscn" id="59_8ye18"]
+[ext_resource type="PackedScene" uid="uid://bvgmounvsf05k" path="res://geoData/prefabs/Sillon/sillon_2015_09_29.tscn" id="60_bihgt"]
+[ext_resource type="PackedScene" uid="uid://c4r3b3d4oxy7d" path="res://geoData/prefabs/Sillon/sillon_2016_04_07.tscn" id="61_be5ab"]
+[ext_resource type="PackedScene" uid="uid://bshlag4lowfhm" path="res://geoData/prefabs/Sillon/sillon_2017_09_07.tscn" id="62_x880g"]
+[ext_resource type="PackedScene" uid="uid://cy7ohbheryu08" path="res://geoData/prefabs/Sillon/sillon_2018_09_10.tscn" id="63_4il7c"]
+[ext_resource type="PackedScene" uid="uid://dfp6h54eo7qh0" path="res://geoData/prefabs/Sillon/sillon_2019_10_31.tscn" id="64_5llcs"]
+[ext_resource type="PackedScene" uid="uid://duita0fk5kjcp" path="res://geoData/prefabs/Sillon/sillon_2020_08_20.tscn" id="65_cfq67"]
+[ext_resource type="PackedScene" uid="uid://cqfg6qx2kvxpv" path="res://geoData/prefabs/Sillon/sillon_2021_09_22.tscn" id="66_1wf8v"]
+[ext_resource type="PackedScene" uid="uid://dow1et2g4hh8d" path="res://geoData/prefabs/Sillon/sillon_2022_09_15.tscn" id="67_pamct"]
+[ext_resource type="PackedScene" uid="uid://c64bdlarxci7f" path="res://geoData/prefabs/Faille/faille_2018_03_07.tscn" id="68_fg0x7"]
+[ext_resource type="PackedScene" uid="uid://cjdww2df7fqs7" path="res://geoData/prefabs/Faille/faille_2018_03_22.tscn" id="69_827e5"]
+[ext_resource type="PackedScene" uid="uid://b41vr5b4pdpnt" path="res://geoData/prefabs/Faille/faille_2018_04_17.tscn" id="70_b2564"]
+[ext_resource type="PackedScene" uid="uid://cesotewgjcbbu" path="res://geoData/prefabs/Faille/faille_2018_07_17.tscn" id="71_xx45s"]
+[ext_resource type="PackedScene" uid="uid://bupqonm1leri1" path="res://geoData/prefabs/Faille/faille_2018_09_13.tscn" id="72_jms14"]
+[ext_resource type="PackedScene" uid="uid://bhen8l3i4pofa" path="res://geoData/prefabs/Faille/faille_2018_11_21.tscn" id="73_c81n0"]
+[ext_resource type="PackedScene" uid="uid://c5p0srv1nubrh" path="res://geoData/prefabs/Faille/faille_2019_02_05.tscn" id="74_px7t7"]
+[ext_resource type="PackedScene" uid="uid://cn630med3rafo" path="res://geoData/prefabs/Faille/faille_2019_03_08.tscn" id="75_2v21e"]
+[ext_resource type="PackedScene" uid="uid://cc7x8rc4682h1" path="res://geoData/prefabs/Faille/faille_2019_05_21.tscn" id="76_5pttj"]
+[ext_resource type="PackedScene" uid="uid://dl1dclt7gysat" path="res://geoData/prefabs/Faille/faille_2019_09_18.tscn" id="77_vqaxq"]
+[ext_resource type="PackedScene" uid="uid://b0ha585f6kfk" path="res://geoData/prefabs/Faille/faille_2019_12_17.tscn" id="78_7n28t"]
+[ext_resource type="PackedScene" uid="uid://dfewo5dqnoruy" path="res://geoData/prefabs/Faille/faille_2020_01_23.tscn" id="79_l64ev"]
+[ext_resource type="PackedScene" uid="uid://crbt8iaa4rb1x" path="res://geoData/prefabs/Faille/faille_2020_05_26.tscn" id="80_j34tw"]
+[ext_resource type="PackedScene" uid="uid://d24rqtj3c8ajm" path="res://geoData/prefabs/Faille/faille_2020_09_07.tscn" id="81_6migg"]
+[ext_resource type="PackedScene" uid="uid://bgwowjksil12v" path="res://geoData/prefabs/Faille/faille_2020_11_17.tscn" id="82_cti6v"]
+[ext_resource type="PackedScene" uid="uid://csmhjnv3d0gw6" path="res://geoData/prefabs/Faille/faille_2021_05_26.tscn" id="83_2kp1l"]
+[ext_resource type="PackedScene" uid="uid://cvxbksdor3d8l" path="res://geoData/prefabs/Faille/faille_2021_09_22.tscn" id="84_eyg7v"]
+[ext_resource type="PackedScene" uid="uid://c5fgbd01cd0xs" path="res://geoData/prefabs/Faille/faille_2021_12_15.tscn" id="85_bp200"]
+[ext_resource type="PackedScene" uid="uid://dggkvlhv4gcof" path="res://geoData/prefabs/Faille/faille_2022_05_04.tscn" id="86_7a8sh"]
+[ext_resource type="PackedScene" uid="uid://cg7efs4tykwkm" path="res://geoData/prefabs/Faille/faille_2023_03_02.tscn" id="87_ss52n"]
+[ext_resource type="PackedScene" uid="uid://ykw1iifn5hfw" path="res://geoData/prefabs/Faille/faille_2023_05_05.tscn" id="88_5rywm"]
+[ext_resource type="PackedScene" uid="uid://k7wh653sba2" path="res://Water2.tscn" id="89_wigdg"]
+
+[sub_resource type="Environment" id="Environment_wigdg"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 2.41
+
+[sub_resource type="Environment" id="Environment_fs8kf"]
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_energy = 2.41
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_8jhw1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gvloe"]
+albedo_color = Color(0.309804, 0.690196, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_gvloe"]
+material = SubResource("StandardMaterial3D_gvloe")
+size = Vector2(5, 5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8d0ks"]
+
+[sub_resource type="Curve" id="Curve_8d0ks"]
+_limits = [0.0, 0.3, 0.0, 1.0]
+_data = [Vector2(0, 0.0101124), 0.0, 1.59337, 0, 0, Vector2(0.496933, 0.3), 0.0, 0.0, 0, 0, Vector2(1, 0.0101124), -1.57964, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_8kg7c"]
+curve = SubResource("Curve_8d0ks")
+
+[sub_resource type="Gradient" id="Gradient_wwdad"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0.0784314)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_ykyjb"]
+gradient = SubResource("Gradient_wwdad")
+
+[sub_resource type="Curve" id="Curve_wwdad"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_4yprr"]
+_limits = [0.0, 30.0, 0.0, 1.0]
+_data = [Vector2(0, 15.1685), 0.0, 0.0, 0, 0, Vector2(0.251534, 30), 0.0, 0.0, 0, 0, Vector2(1, 30), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_1ofy4"]
+_limits = [0.0, 3.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_a41ck"]
+curve_x = SubResource("Curve_wwdad")
+curve_y = SubResource("Curve_4yprr")
+curve_z = SubResource("Curve_1ofy4")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_alien"]
+lifetime_randomness = 0.12
+particle_flag_align_y = true
+particle_flag_rotate_y = true
+emission_shape = 3
+emission_box_extents = Vector3(2, 2, 2)
+scale_over_velocity_curve = SubResource("CurveXYZTexture_a41ck")
+color_initial_ramp = SubResource("GradientTexture1D_ykyjb")
+alpha_curve = SubResource("CurveTexture_8kg7c")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wwdad"]
+render_priority = 0
+shader = ExtResource("50_8kg7c")
+
+[sub_resource type="SphereMesh" id="SphereMesh_ykyjb"]
+material = SubResource("ShaderMaterial_wwdad")
+radius = 0.001
+height = 0.002
+
+[sub_resource type="Gradient" id="Gradient_ykyjb"]
+offsets = PackedFloat32Array(0, 0.182482, 0.832117, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_sivbr"]
+gradient = SubResource("Gradient_ykyjb")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ykyjb"]
+emission_shape = 3
+emission_box_extents = Vector3(2, 0.1, 2)
+gravity = Vector3(0, 0, 0)
+color_ramp = SubResource("GradientTexture1D_sivbr")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sivbr"]
+transparency = 1
+shading_mode = 0
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.521141, 0.521141, 0.521141, 1)
+albedo_texture = ExtResource("51_wwdad")
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="QuadMesh_4yprr"]
+material = SubResource("StandardMaterial3D_sivbr")
+
+[sub_resource type="BoxMesh" id="BoxMesh_wwdad"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8jhw1"]
+shading_mode = 0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_if4ww"]
+shading_mode = 0
+albedo_color = Color(0, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8jhw1"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_hssls")
+metadata/trigger_click = false
+metadata/select_click = false
+
+[node name="CameraSillon" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.803857, 0.594823, 0, -0.594823, 0.803857, 0.065, 1.037, -1.158)
+environment = SubResource("Environment_wigdg")
+current = true
+
+[node name="CameraFaille" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.803857, 0.594823, 0, -0.594823, 0.803857, 0.065, 1.037, -1.158)
+visible = false
+environment = SubResource("Environment_fs8kf")
+current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.281739, 0.959491, 0, -0.959491, -0.281739, 0, 5.46224, 0)
+sky_mode = 1
+
+[node name="WaterSillon" parent="." instance=ExtResource("45_72tv7")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1.314, 0.2, 9.264)
+visible = false
+
+[node name="WaterFaille" parent="." instance=ExtResource("45_72tv7")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 1.314, 3.95051, -69.4804)
+visible = false
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "Hello"
+
+[node name="TimelineSliderSillon" type="HSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -301.0
+offset_top = -27.0
+offset_right = 299.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 21.0
+tick_count = 21
+ticks_on_borders = true
+
+[node name="TimelineSliderFaille" type="HSlider" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -291.0
+offset_top = -27.0
+offset_right = 292.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 20.0
+
+[node name="PlayButton" type="TextureButton" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -364.0
+offset_top = -51.0
+offset_right = 148.0
+offset_bottom = 461.0
+grow_horizontal = 2
+grow_vertical = 0
+scale = Vector2(0.1, 0.1)
+toggle_mode = true
+texture_normal = ExtResource("3_ykyjb")
+
+[node name="RangeSlider" type="Control" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -301.0
+offset_top = -68.0
+offset_right = 299.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("4_1ofy4")
+
+[node name="Bar" type="ColorRect" parent="Control/RangeSlider"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.921569, 0.921569, 0.921569, 1)
+
+[node name="Handle1" type="TextureButton" parent="Control/RangeSlider"]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 20.0
+texture_normal = ExtResource("4_4yprr")
+texture_hover = ExtResource("5_1ofy4")
+
+[node name="Handle2" type="TextureButton" parent="Control/RangeSlider"]
+layout_mode = 0
+offset_left = 580.0
+offset_right = 600.0
+offset_bottom = 20.0
+texture_normal = ExtResource("4_4yprr")
+texture_hover = ExtResource("5_1ofy4")
+
+[node name="CheckButton" type="CheckButton" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -360.135
+offset_top = -65.88
+offset_right = -316.135
+offset_bottom = -41.88
+grow_horizontal = 2
+grow_vertical = 0
+button_pressed = true
+
+[node name="OrthoScale" type="VSlider" parent="Control"]
+layout_mode = 1
+offset_left = 15.0
+offset_top = 150.0
+offset_right = 31.0
+offset_bottom = 550.0
+min_value = 1.0
+max_value = 20.0
+step = 0.1
+value = 1.0
+
+[node name="OrthoScaleValue" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 31.23
+offset_top = 538.5
+offset_right = 87.23
+offset_bottom = 561.5
+text = "1"
+
+[node name="OrthoHeightScale" type="VSlider" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -31.0
+offset_top = 150.0
+offset_right = -15.0
+offset_bottom = 550.0
+grow_horizontal = 0
+min_value = 1.0
+max_value = 10.0
+step = 0.1
+value = 1.0
+
+[node name="OrthoHeightScaleValue" type="Label" parent="Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -93.5601
+offset_top = 538.5
+offset_right = -37.5601
+offset_bottom = 561.5
+grow_horizontal = 0
+text = "1"
+horizontal_alignment = 2
+
+[node name="Menu" type="VBoxContainer" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 45.0
+offset_top = -101.0
+offset_right = 212.0
+grow_vertical = 0
+script = ExtResource("7_dvobo")
+
+[node name="CheckBox" type="CheckBox" parent="Control/Menu"]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_8jhw1")
+text = "Comparative view"
+
+[node name="CheckBox2" type="CheckBox" parent="Control/Menu"]
+layout_mode = 2
+button_group = SubResource("ButtonGroup_8jhw1")
+text = "Absolute view"
+
+[node name="CheckBox3" type="CheckBox" parent="Control/Menu"]
+layout_mode = 2
+button_pressed = true
+button_group = SubResource("ButtonGroup_8jhw1")
+text = "Realistic view"
+
+[node name="HamburgerMenu" type="TextureButton" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -20.0
+grow_vertical = 0
+scale = Vector2(2, 2)
+texture_normal = ExtResource("7_if4ww")
+script = ExtResource("8_brp11")
+
+[node name="WaterButton" type="TextureButton" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(2, 2)
+toggle_mode = true
+texture_normal = ExtResource("10_gvloe")
+
+[node name="XROrigin3D" type="XROrigin3D" parent="."]
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02, 1.087, -2)
+visible = false
+mesh = SubResource("PlaneMesh_gvloe")
+
+[node name="SillonInterpole" parent="XROrigin3D" instance=ExtResource("3_s7uix")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.02, 0, -2)
+visible = false
+
+[node name="WaterSillon2" parent="XROrigin3D" instance=ExtResource("89_wigdg")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.001, -2)
+visible = false
+
+[node name="TestWater" parent="XROrigin3D" instance=ExtResource("13_m5u2i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.001, -2)
+visible = false
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, -1)
+current = true
+script = ExtResource("4_4hyfj")
+
+[node name="SillonGroup2" type="Node3D" parent="XROrigin3D"]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, -2)
+visible = false
+
+[node name="Sillon_2002-09-30" parent="XROrigin3D/SillonGroup2" instance=ExtResource("46_4hyfj")]
+
+[node name="Sillon_2003-06-15" parent="XROrigin3D/SillonGroup2" instance=ExtResource("47_wigdg")]
+visible = false
+
+[node name="Sillon_2005-09-18" parent="XROrigin3D/SillonGroup2" instance=ExtResource("48_fs8kf")]
+visible = false
+
+[node name="Sillon_2006-04-30" parent="XROrigin3D/SillonGroup2" instance=ExtResource("49_arvyt")]
+visible = false
+
+[node name="Sillon_2007-09-25" parent="XROrigin3D/SillonGroup2" instance=ExtResource("50_3ku12")]
+visible = false
+
+[node name="Sillon_2008-03-19" parent="XROrigin3D/SillonGroup2" instance=ExtResource("51_ars1g")]
+visible = false
+
+[node name="Sillon_2009-09-17" parent="XROrigin3D/SillonGroup2" instance=ExtResource("52_oa651")]
+visible = false
+
+[node name="Sillon_2010-04-29" parent="XROrigin3D/SillonGroup2" instance=ExtResource("53_8tted")]
+visible = false
+
+[node name="Sillon_2010-09-22" parent="XROrigin3D/SillonGroup2" instance=ExtResource("54_487xd")]
+visible = false
+
+[node name="Sillon_2011-09-14" parent="XROrigin3D/SillonGroup2" instance=ExtResource("55_jweu0")]
+visible = false
+
+[node name="Sillon_2012-09-18" parent="XROrigin3D/SillonGroup2" instance=ExtResource("56_3yw45")]
+visible = false
+
+[node name="Sillon_2013-09-05" parent="XROrigin3D/SillonGroup2" instance=ExtResource("57_wjvdr")]
+visible = false
+
+[node name="Sillon_2014-03-05" parent="XROrigin3D/SillonGroup2" instance=ExtResource("58_s1scn")]
+visible = false
+
+[node name="Sillon_2014-09-10" parent="XROrigin3D/SillonGroup2" instance=ExtResource("59_8ye18")]
+visible = false
+
+[node name="Sillon_2015-09-29" parent="XROrigin3D/SillonGroup2" instance=ExtResource("60_bihgt")]
+visible = false
+
+[node name="Sillon_2016-04-07" parent="XROrigin3D/SillonGroup2" instance=ExtResource("61_be5ab")]
+visible = false
+
+[node name="Sillon_2017-09-07" parent="XROrigin3D/SillonGroup2" instance=ExtResource("62_x880g")]
+visible = false
+
+[node name="Sillon_2018-09-10" parent="XROrigin3D/SillonGroup2" instance=ExtResource("63_4il7c")]
+visible = false
+
+[node name="Sillon_2019-10-31" parent="XROrigin3D/SillonGroup2" instance=ExtResource("64_5llcs")]
+visible = false
+
+[node name="Sillon_2020-08-20" parent="XROrigin3D/SillonGroup2" instance=ExtResource("65_cfq67")]
+visible = false
+
+[node name="Sillon_2021-09-22" parent="XROrigin3D/SillonGroup2" instance=ExtResource("66_1wf8v")]
+visible = false
+
+[node name="Sillon_2022-09-15" parent="XROrigin3D/SillonGroup2" instance=ExtResource("67_pamct")]
+visible = false
+
+[node name="FailleGroup2" type="Node3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -75)
+visible = false
+
+[node name="Faille_2018-03-07" parent="XROrigin3D/FailleGroup2" instance=ExtResource("68_fg0x7")]
+
+[node name="Faille_2018-03-22" parent="XROrigin3D/FailleGroup2" instance=ExtResource("69_827e5")]
+visible = false
+
+[node name="Faille_2018-04-17" parent="XROrigin3D/FailleGroup2" instance=ExtResource("70_b2564")]
+visible = false
+
+[node name="Faille_2018-07-17" parent="XROrigin3D/FailleGroup2" instance=ExtResource("71_xx45s")]
+visible = false
+
+[node name="Faille_2018-09-13" parent="XROrigin3D/FailleGroup2" instance=ExtResource("72_jms14")]
+visible = false
+
+[node name="Faille_2018-11-21" parent="XROrigin3D/FailleGroup2" instance=ExtResource("73_c81n0")]
+visible = false
+
+[node name="Faille_2019-02-05" parent="XROrigin3D/FailleGroup2" instance=ExtResource("74_px7t7")]
+visible = false
+
+[node name="Faille_2019-03-08" parent="XROrigin3D/FailleGroup2" instance=ExtResource("75_2v21e")]
+visible = false
+
+[node name="Faille_2019-05-21" parent="XROrigin3D/FailleGroup2" instance=ExtResource("76_5pttj")]
+visible = false
+
+[node name="Faille_2019-09-18" parent="XROrigin3D/FailleGroup2" instance=ExtResource("77_vqaxq")]
+visible = false
+
+[node name="Faille_2019-12-17" parent="XROrigin3D/FailleGroup2" instance=ExtResource("78_7n28t")]
+visible = false
+
+[node name="Faille_2020-01-23" parent="XROrigin3D/FailleGroup2" instance=ExtResource("79_l64ev")]
+visible = false
+
+[node name="Faille_2020-05-26" parent="XROrigin3D/FailleGroup2" instance=ExtResource("80_j34tw")]
+visible = false
+
+[node name="Faille_2020-09-07" parent="XROrigin3D/FailleGroup2" instance=ExtResource("81_6migg")]
+visible = false
+
+[node name="Faille_2020-11-17" parent="XROrigin3D/FailleGroup2" instance=ExtResource("82_cti6v")]
+visible = false
+
+[node name="Faille_2021-05-26" parent="XROrigin3D/FailleGroup2" instance=ExtResource("83_2kp1l")]
+visible = false
+
+[node name="Faille_2021-09-22" parent="XROrigin3D/FailleGroup2" instance=ExtResource("84_eyg7v")]
+visible = false
+
+[node name="Faille_2021-12-15" parent="XROrigin3D/FailleGroup2" instance=ExtResource("85_bp200")]
+visible = false
+
+[node name="Faille_2022-05-04" parent="XROrigin3D/FailleGroup2" instance=ExtResource("86_7a8sh")]
+visible = false
+
+[node name="Faille_2023-03-02" parent="XROrigin3D/FailleGroup2" instance=ExtResource("87_ss52n")]
+visible = false
+
+[node name="Faille_2023-05-05" parent="XROrigin3D/FailleGroup2" instance=ExtResource("88_5rywm")]
+visible = false
+
+[node name="WaterFaille2" parent="XROrigin3D" instance=ExtResource("89_wigdg")]
+transform = Transform3D(2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 3.6543, -72.2963)
+visible = false
+
+[node name="XRDateLabel" type="OpenXRCompositionLayerQuad" parent="XROrigin3D" node_paths=PackedStringArray("layer_viewport")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.28999, -1.69417)
+layer_viewport = NodePath("../../SubViewport")
+alpha_blend = true
+
+[node name="XRTimelineSillon" type="OpenXRCompositionLayerQuad" parent="XROrigin3D" node_paths=PackedStringArray("layer_viewport")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -0.771)
+visible = false
+layer_viewport = NodePath("../../SubViewport2")
+alpha_blend = true
+
+[node name="TimelineStaticBody3D" type="StaticBody3D" parent="XROrigin3D/XRTimelineSillon"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/XRTimelineSillon/TimelineStaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.01, 0, 0, 0)
+shape = SubResource("BoxShape3D_8d0ks")
+
+[node name="StormParticles" type="GPUParticles3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.14823, -2.075)
+visible = false
+amount = 8000
+amount_ratio = 0.0
+visibility_aabb = AABB(-3, -3, -3, 6, 6, 6)
+process_material = SubResource("ParticleProcessMaterial_alien")
+draw_pass_1 = SubResource("SphereMesh_ykyjb")
+
+[node name="CloudParticles" type="GPUParticles3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.16731, -2.075)
+visible = false
+amount = 800
+amount_ratio = 0.0
+lifetime = 9.82
+preprocess = 1.0
+visibility_aabb = AABB(-3, -0.1, -3, 6, 0.225, 6)
+process_material = SubResource("ParticleProcessMaterial_ykyjb")
+draw_pass_1 = SubResource("QuadMesh_4yprr")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.506122, -2.98928)
+visible = false
+mesh = SubResource("BoxMesh_wwdad")
+
+[node name="SillonOrtho" parent="XROrigin3D" instance=ExtResource("56_a41ck")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="LeftHand" type="XRController3D" parent="XROrigin3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 1, -1.5)
+tracker = &"left_hand"
+pose = &"aim"
+show_when_tracked = true
+
+[node name="FunctionPointer" parent="XROrigin3D/LeftHand" instance=ExtResource("56_alien")]
+laser_length = 1
+laser_material = SubResource("StandardMaterial3D_8jhw1")
+laser_hit_material = SubResource("StandardMaterial3D_if4ww")
+show_target = true
+target_radius = 0.005
+target_material = SubResource("StandardMaterial3D_if4ww")
+
+[node name="RightHand" type="XRController3D" parent="XROrigin3D"]
+tracker = &"right_hand"
+pose = &"aim"
+
+[node name="XRUI" parent="XROrigin3D" instance=ExtResource("57_8jhw1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.892344, -1.57004)
+screen_size = Vector2(2, 1)
+scene = ExtResource("58_if4ww")
+viewport_size = Vector2(1152, 648)
+unshaded = true
+scene_properties_keys = PackedStringArray("ui_for_xr.gd")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="XROrigin3D/XRUI"]
+transform = Transform3D(2.165, 0, 0, 0, 1, 0, 0, 0, 0.035, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="XROrigin3D/XRUI/StaticBody3D2"]
+shape = SubResource("BoxShape3D_8jhw1")
+
+[node name="SubViewport" type="SubViewport" parent="."]
+transparent_bg = true
+use_occlusion_culling = true
+scaling_3d_scale = 0.75
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="SubViewport"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="SubViewport/Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_top = 20.0
+offset_right = 20.0
+offset_bottom = 43.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 24
+text = "Hello"
+
+[node name="SubViewport2" type="SubViewport" parent="."]
+transparent_bg = true
+scaling_3d_scale = 0.75
+size = Vector2i(1024, 1024)
+render_target_update_mode = 4
+
+[node name="Control" type="Control" parent="SubViewport2"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TimelineSliderSillon" type="HSlider" parent="SubViewport2/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -291.0
+offset_top = -27.0
+offset_right = 292.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 22.0
+
+[connection signal="drag_ended" from="Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_drag_ended"]
+[connection signal="drag_started" from="Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_drag_started"]
+[connection signal="value_changed" from="Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_value_changed"]
+[connection signal="value_changed" from="Control/TimelineSliderFaille" to="." method="_on_timeline_slider_faille_value_changed"]
+[connection signal="toggled" from="Control/PlayButton" to="." method="_on_play_button_toggled"]
+[connection signal="toggled" from="Control/CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="value_changed" from="Control/OrthoScale" to="." method="_on_ortho_scale_value_changed"]
+[connection signal="value_changed" from="Control/OrthoHeightScale" to="." method="_on_ortho_height_scale_value_changed"]
+[connection signal="pressed" from="Control/Menu/CheckBox" to="Control/Menu" method="_on_check_box_pressed"]
+[connection signal="pressed" from="Control/Menu/CheckBox2" to="Control/Menu" method="_on_check_box_2_pressed"]
+[connection signal="pressed" from="Control/Menu/CheckBox3" to="Control/Menu" method="_on_check_box_3_pressed"]
+[connection signal="pressed" from="Control/HamburgerMenu" to="Control/HamburgerMenu" method="_on_pressed"]
+[connection signal="toggled" from="Control/WaterButton" to="." method="_on_water_button_toggled"]
+[connection signal="drag_ended" from="SubViewport2/Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_drag_ended"]
+[connection signal="drag_started" from="SubViewport2/Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_drag_started"]
+[connection signal="value_changed" from="SubViewport2/Control/TimelineSliderSillon" to="." method="_on_timeline_slider_sillon_value_changed"]
+
+[editable path="XROrigin3D/SillonInterpole"]
